@@ -1,5 +1,8 @@
+import math
+
 def area_triangle(a, b, c):
-    area = 1/2*(a + b + c)
+    s = ( a + b + c )/2
+    area = math.sqrt(s*(s-a)*(s-b)*(s-c))
     return area
 
-len_triangle()
+area_triangle(23,14,8)
